@@ -43,7 +43,7 @@ function Form(){
     }, [isActive, seconds]);
 
     const handleSpace= (e) => {
-        if (e.keyCode === 32 || e.keyCode === 229) {
+        if (e.keyCode === 32) {
           if(text.trim().toLowerCase() == data.data[wordCount].targetWord.toLowerCase()){
               setCorrect(correct+1);
               dispatch(setTrueWords(text.trim().toLowerCase()));
